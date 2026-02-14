@@ -73,7 +73,7 @@ pip install slack-bolt python-dotenv
 
 - Socket Mode を `Enabled` にする
 - Event Subscriptions で Bot Event `app_mention` を追加
-- OAuth Scope に `app_mentions:read` と `chat:write` を追加
+- OAuth Scope に `app_mentions:read` と `chat:write` を追加（`chat:read` ではなく投稿権限の `chat:write` が必要）
 - スレッド本文の取得が必要な運用では `channels:history`（必要に応じて `groups:history` / `im:history` / `mpim:history`）も追加
 - Bot を投稿先チャンネルに招待する
 
